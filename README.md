@@ -1,9 +1,9 @@
 # Debloat MIUI 
 
-This is a guide on utilizing ADB tools to uninstall packages on your bloated Xiaomi Phone, just so it reduces the spooky tracking from Big Tech and not hog your system resources for a more minimalistic user experience. 
+This is a guide on utilizing ADB tools to uninstall packages on your bloated Xiaomi Phone, just so it reduces the spooky tracking from Big Tech, and not hog your system resources for a more minimalistic user experience. 
 There's no root required to uninstall these packages. 
 
-***NOTE:*** Running all commands listed in "commands.txt" will safely remove the applications,yet it is recommended to find a replacement of some 
+***NOTE:*** Running all commands listed in ["command.txt"](/command.txt) will safely remove the applications,yet it is recommended to find a replacement of some 
 applications you require. These commands cannot harm your device or put your phone into a loop. However, you may lose functionality of some services like, *_Xiaomi Cloud Services_*, so make sure you don't take out something you need.
 
 
