@@ -5,7 +5,7 @@ class CommandLineOptions:
     command = None
     file = None
 
-    def __init__(self,command ="-u",file="command.txt"):
+    def __init__(self,command ="-u",file="command.yaml"):
         self.command = command
         self.file = file
 
