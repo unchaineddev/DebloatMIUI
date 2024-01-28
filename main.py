@@ -5,7 +5,7 @@ def uninstall_apk(package_name):
     subprocess.run(["adb", "shell", "pm", "uninstall", "--user", "0", package_name])
 
 # Reads from file and uninstalls
-with open("commands.txt", "r") as file:
+with open("command.txt", "r") as file:
     lines = file.readlines()
     for line in lines:
         if line.strip():
