@@ -3,7 +3,7 @@
 This is a guide on utilizing ADB tools to uninstall packages on your bloated Xiaomi Phone, just so it reduces the spooky tracking from Big Tech, and not hog your system resources for a more minimalistic user experience. 
 There's no root required to uninstall these packages. 
 
-***NOTE:*** Running all commands listed in ["command.txt"](/command.txt) will safely remove the applications,yet it is recommended to find a replacement of some 
+***NOTE:*** Running all commands listed in ["command.yaml"](/command.yaml) will safely remove the applications,yet it is recommended to find a replacement of some 
 applications you require. These commands cannot harm your device or put your phone into a loop. However, you may lose functionality of some services like, *_Xiaomi Cloud Services_*, so make sure you don't take out something you need.
 
 
@@ -64,5 +64,24 @@ For example, to list all installed packages with Google in their name, you'd typ
     pm list package | grep google
 
   
-  
+  ## Uninstalling and restoring packages using the script
+
+  In order to uninstall the packages listed in the [provided file](./command.yaml),run:
+  ```bash
+  python main.py -u
+   ```
+  In case you want to restore any of the packages ununstalled by the above command,run:
+  ```bash
+  python main.py -r
+   ```
+
+   you can also reference your own file like this:
+   ```bash
+   python main.py file=<your_file>
+   ```
+
+   if you just run the script with no flags or options,it will default to 
+   ```bash
+  python main.py -u file=command.yaml
+   ```
 
